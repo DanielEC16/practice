@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-.form-login{
-  width: 20rem;
-}
-
 .logo {
   width: 3rem;
 }
@@ -31,7 +27,7 @@
 
 .box-area {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 40px;
 }
 
@@ -42,12 +38,10 @@
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 .box img {
-  object-fit: cover;
-  height: 100%;
   width: 100%;
+  height: 100%;
   border-radius: 10px;
   display: block;
-  transform: transform 0.5s;
 }
 
 .overlay {
