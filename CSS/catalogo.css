@@ -84,4 +84,12 @@
 
 .box:hover .overlay {
   height: 100%;
+}
+
+.form-login {
+  overflow: auto;
+  min-width: 18rem;
+  max-height: 22rem;
+  border-radius: 10px;
+  border: none;
 }/*# sourceMappingURL=catalogo.css.map */

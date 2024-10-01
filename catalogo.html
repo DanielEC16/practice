@@ -14,7 +14,7 @@
 
 <body>
     <header class="px-3 navbar sticky-top bg-body-tertiary">
-        <div class="container-fluid d-flex justify-content-between">
+        <div class="container-fluid d-flex justify-content-center justify-content-md-between flex-column flex-md-row">
             <a href="/" class="d-flex align-items-center text-decoration-none gap-2">
                 <img src="img/logo.png" alt="" class="logo" />
                 <span style="color: black" class="fst-normal fs-5">Shiba Store</span>
@@ -35,113 +35,116 @@
                 </li>
             </ul>
 
+
             <div class="cart-log d-flex gap-3 align-items-center">
-                <div class="dropdown">
+
+
+                <div class="dropdown-center">
                     <a href="#"
                         class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle fs-5"
-                        data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false"
+                        data-bs-auto-close="outside">
                         <i class="bi bi-person-circle fs-3" class="rounded-circle"></i>
                     </a>
 
-                    
-                    <form class="dropdown-menu dropdown-menu-end p-4 form-login" data-bs-theme="dark">
+
+                    <form class="dropdown-menu dropdown-menu-end form-login p-3" data-bs-theme="dark">
                         <h3 class="text-center mb-3">Iniciar Sesion</h3>
                         <div class="mb-3">
-                          <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                            <label for="exampleDropdownFormEmail2" class="form-label">Correo Electronico</label>
+                            <input type="email" class="form-control" id="exampleDropdownFormEmail2"
+                                placeholder="email@example.com">
                         </div>
                         <div class="mb-3">
-                          <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                            <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword2"
+                                placeholder="Password">
                         </div>
-                        <div class="mb-3">
-                          <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="dropdownCheck2">
-                            <label class="form-check-label" for="dropdownCheck2">
-                              Remember me
-                            </label>
-                          </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                            <a href="registrar.html">¿No tienes una cuenta?</a>
                         </div>
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-                      </form>
-                    
+                    </form>
+
                 </div>
                 <div class="separators">
                     <hr />
                     <hr />
                 </div>
-                <div class="dropdown">
+
+                <div class="dropdown-center">
                     <a href="#"
                         class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle fs-5"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="bi bi-cart-fill fs-3" class="rounded-circle"></i>
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-end" data-bs-theme="dark">
-                        <li><a class="dropdown-item" href="#">Iniciar Sesion</a></li>
-                        <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                    <ul class="dropdown-menu dropdown-menu-end p-3 drop-carrito" data-bs-theme="dark">
+                        <li>
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="..." class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural lead-in to additional content. This content is a little bit
+                                                longer.</p>
+                                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Proceder al pago</button>
+                        </div>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
 
-    
+
 
     <main>
         <section id="card-area">
             <div class="wrapper">
-                
+
                 <div class="box-area">
                     <div class="box">
                         <img src="https://www.cuartomundo.cl/wp-content/uploads/2019/03/Hulk-181.jpg" alt="">
                         <div class="overlay">
                             <h3>Tittle</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima illo cupiditate exercitationem, quaerat ut.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima
+                                illo cupiditate exercitationem, quaerat ut.</p>
                             <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
-                                <button type="button" class="btn btn-light rounded-start">Left</button>
+                                <button type="button" class="btn btn-light rounded-start">Add</button>
                                 <button type="button" class="btn btn-light">Middle</button>
-                                <button type="button" class="btn btn-light rounded-end">Right</button>
-                              </div>
-                              
+                                <button type="button" class="btn btn-light rounded-end">C</button>
+                            </div>
+
                         </div>
                     </div>
                     <div class="box">
-                        <img src="https://marketplace.canva.com/EAFjNCKkDPI/1/0/1003w/canva-portada-de-libro-de-fantasía-dramático-verde-Ct1fLal3ekY.jpg" alt="">
+                        <img src="https://marketplace.canva.com/EAFjNCKkDPI/1/0/1003w/canva-portada-de-libro-de-fantasía-dramático-verde-Ct1fLal3ekY.jpg"
+                            alt="">
                         <div class="overlay">
                             <h3>Tittle</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima illo cupiditate exercitationem, quaerat ut.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima
+                                illo cupiditate exercitationem, quaerat ut.</p>
                             <a href="#">Shop Now</a>
                         </div>
                     </div>
                     <div class="box">
-                        <img src="https://marketplace.canva.com/EAFI171fL0M/1/0/1003w/canva-portada-de-libro-de-novela-ilustrado-color-azul-aqua-PQeWaiiK0aA.jpg" alt="">
+                        <img src="https://marketplace.canva.com/EAFI171fL0M/1/0/1003w/canva-portada-de-libro-de-novela-ilustrado-color-azul-aqua-PQeWaiiK0aA.jpg"
+                            alt="">
                         <div class="overlay">
                             <h3>Tittle</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima illo cupiditate exercitationem, quaerat ut.</p>
-                            <a href="#">Shop Now</a>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img src="https://www.cuartomundo.cl/wp-content/uploads/2019/03/Hulk-181.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Tittle</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima illo cupiditate exercitationem, quaerat ut.</p>
-                            <a href="#">Shop Now</a>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img src="https://marketplace.canva.com/EAFjNCKkDPI/1/0/1003w/canva-portada-de-libro-de-fantasía-dramático-verde-Ct1fLal3ekY.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Tittle</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima illo cupiditate exercitationem, quaerat ut.</p>
-                            <a href="#">Shop Now</a>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img src="https://marketplace.canva.com/EAFI171fL0M/1/0/1003w/canva-portada-de-libro-de-novela-ilustrado-color-azul-aqua-PQeWaiiK0aA.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Tittle</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima illo cupiditate exercitationem, quaerat ut.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima
+                                illo cupiditate exercitationem, quaerat ut.</p>
                             <a href="#">Shop Now</a>
                         </div>
                     </div>
@@ -149,23 +152,28 @@
                         <img src="https://www.cuartomundo.cl/wp-content/uploads/2019/03/Hulk-181.jpg" alt="">
                         <div class="overlay">
                             <h3>Tittle</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima illo cupiditate exercitationem, quaerat ut.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima
+                                illo cupiditate exercitationem, quaerat ut.</p>
                             <a href="#">Shop Now</a>
                         </div>
                     </div>
                     <div class="box">
-                        <img src="https://marketplace.canva.com/EAFjNCKkDPI/1/0/1003w/canva-portada-de-libro-de-fantasía-dramático-verde-Ct1fLal3ekY.jpg" alt="">
+                        <img src="https://marketplace.canva.com/EAFjNCKkDPI/1/0/1003w/canva-portada-de-libro-de-fantasía-dramático-verde-Ct1fLal3ekY.jpg"
+                            alt="">
                         <div class="overlay">
                             <h3>Tittle</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima illo cupiditate exercitationem, quaerat ut.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima
+                                illo cupiditate exercitationem, quaerat ut.</p>
                             <a href="#">Shop Now</a>
                         </div>
                     </div>
                     <div class="box">
-                        <img src="https://marketplace.canva.com/EAFI171fL0M/1/0/1003w/canva-portada-de-libro-de-novela-ilustrado-color-azul-aqua-PQeWaiiK0aA.jpg" alt="">
+                        <img src="https://marketplace.canva.com/EAFI171fL0M/1/0/1003w/canva-portada-de-libro-de-novela-ilustrado-color-azul-aqua-PQeWaiiK0aA.jpg"
+                            alt="">
                         <div class="overlay">
                             <h3>Tittle</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima illo cupiditate exercitationem, quaerat ut.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima
+                                illo cupiditate exercitationem, quaerat ut.</p>
                             <a href="#">Shop Now</a>
                         </div>
                     </div>
@@ -173,23 +181,57 @@
                         <img src="https://www.cuartomundo.cl/wp-content/uploads/2019/03/Hulk-181.jpg" alt="">
                         <div class="overlay">
                             <h3>Tittle</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima illo cupiditate exercitationem, quaerat ut.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima
+                                illo cupiditate exercitationem, quaerat ut.</p>
                             <a href="#">Shop Now</a>
                         </div>
                     </div>
                     <div class="box">
-                        <img src="https://marketplace.canva.com/EAFjNCKkDPI/1/0/1003w/canva-portada-de-libro-de-fantasía-dramático-verde-Ct1fLal3ekY.jpg" alt="">
+                        <img src="https://marketplace.canva.com/EAFjNCKkDPI/1/0/1003w/canva-portada-de-libro-de-fantasía-dramático-verde-Ct1fLal3ekY.jpg"
+                            alt="">
                         <div class="overlay">
                             <h3>Tittle</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima illo cupiditate exercitationem, quaerat ut.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima
+                                illo cupiditate exercitationem, quaerat ut.</p>
                             <a href="#">Shop Now</a>
                         </div>
                     </div>
                     <div class="box">
-                        <img src="https://marketplace.canva.com/EAFI171fL0M/1/0/1003w/canva-portada-de-libro-de-novela-ilustrado-color-azul-aqua-PQeWaiiK0aA.jpg" alt="">
+                        <img src="https://marketplace.canva.com/EAFI171fL0M/1/0/1003w/canva-portada-de-libro-de-novela-ilustrado-color-azul-aqua-PQeWaiiK0aA.jpg"
+                            alt="">
                         <div class="overlay">
                             <h3>Tittle</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima illo cupiditate exercitationem, quaerat ut.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima
+                                illo cupiditate exercitationem, quaerat ut.</p>
+                            <a href="#">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="https://www.cuartomundo.cl/wp-content/uploads/2019/03/Hulk-181.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Tittle</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima
+                                illo cupiditate exercitationem, quaerat ut.</p>
+                            <a href="#">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="https://marketplace.canva.com/EAFjNCKkDPI/1/0/1003w/canva-portada-de-libro-de-fantasía-dramático-verde-Ct1fLal3ekY.jpg"
+                            alt="">
+                        <div class="overlay">
+                            <h3>Tittle</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima
+                                illo cupiditate exercitationem, quaerat ut.</p>
+                            <a href="#">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="https://marketplace.canva.com/EAFI171fL0M/1/0/1003w/canva-portada-de-libro-de-novela-ilustrado-color-azul-aqua-PQeWaiiK0aA.jpg"
+                            alt="">
+                        <div class="overlay">
+                            <h3>Tittle</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus numquam minima
+                                illo cupiditate exercitationem, quaerat ut.</p>
                             <a href="#">Shop Now</a>
                         </div>
                     </div>
